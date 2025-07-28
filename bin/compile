@@ -73,26 +73,7 @@ libxfixes3
 libgtk-3-0
 EOF
 	fi
-
-	case "$STACK" in
-	  "heroku-18")
-	    cat << EOF >>$build_tmpdir/Aptfile
-libvpx5
-EOF
-	    ;;
-	  "heroku-20")
-	    cat << EOF >>$build_tmpdir/Aptfile
-libvpx6
-EOF
-	    ;;
-		"heroku-22")
-	    cat << EOF >>$build_tmpdir/Aptfile
-libvpx7
-EOF
-	    ;;
-	  *)
-	    error "STACK must be 'heroku-18', 'heroku-20', or 'heroku-22'"
-	esac
+        cat << EOF >>$build_tmpdir/Aptfile
 
 	local cache_tmpdir=$(mktemp -d)
 
