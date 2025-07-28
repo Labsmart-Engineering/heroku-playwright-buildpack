@@ -74,7 +74,6 @@ libgtk-3-0
 libvpx9
 EOF
 	fi
-        cat << EOF >>$build_tmpdir/Aptfile
 
 	local cache_tmpdir=$(mktemp -d)
 
