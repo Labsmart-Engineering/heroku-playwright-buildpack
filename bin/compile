@@ -71,6 +71,7 @@ libxcomposite1
 libxdamage1
 libxfixes3
 libgtk-3-0
+libvpx9
 EOF
 	fi
         cat << EOF >>$build_tmpdir/Aptfile
